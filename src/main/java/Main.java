@@ -38,9 +38,30 @@ public class Main {
         EqualsClass equalsClass = new EqualsClass();
         equalsClass.getValue("100", "100");
         equalsClass.getValue("Cat", "Dog");
-        System.out.println(equalsClass.equals(equalsClass)+"\n");
+        System.out.println(equalsClass.equals(equalsClass) + "\n");
 
-        System.out.println("Task 10...");
+        /* I don't create hexadecimal constants in this task, that a hexadecimal number starts with zero*/
+        System.out.println("Task 10");
+        int n = 010101010101;
+        int k = 1010101010;
+        int a = n & k;
+        int v = n | k;
+        int m = n ^ k;
+        int e = ~n;
+        int f = ~k;
+        int g = n>>2;
+        int l = k<<4;
+        int h = k>>>3;
 
+        System.out.println("n = " + Integer.toBinaryString(n));
+        System.out.println("k = " + Integer.toBinaryString(k));
+        System.out.println("a = " + Integer.toBinaryString(a));
+        System.out.println("v = " + Integer.toBinaryString(v));
+        System.out.println("m = " + Integer.toBinaryString(m));
+        System.out.println("e = " + Integer.toBinaryString(e));
+        System.out.println("f = " + Integer.toBinaryString(f));
+        System.out.println("g = " + Integer.toBinaryString(g));
+        System.out.println("l = " + Integer.toBinaryString(l));
+        System.out.println("h = " + Integer.toBinaryString(h));
     }
 }
