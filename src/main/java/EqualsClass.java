@@ -1,12 +1,15 @@
 public class EqualsClass {
-    public String getValue(String value1, String value2) {
-
-        if (value1 == value2) {
-            System.out.println("true");
+    public void getValue(String value1, String value2) {
+        if (value1.equals(value2)) {
+            System.out.println("Statement  is true");
         } else {
-            System.out.println("false");
+            System.out.println("Statement is false");
         }
-        return value1;
+        if (value1 == value2) {
+            System.out.println("Statement  is true");
+        } else {
+            System.out.println("Statement is false");
+        }
     }
 }
 

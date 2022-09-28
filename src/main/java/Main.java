@@ -34,11 +34,11 @@ public class Main {
         c = c >>> 3;
         System.out.println(Integer.toBinaryString(c) + "\n");
 
-        /// TODO
         System.out.println("Task 14");
         EqualsClass equalsClass = new EqualsClass();
-        System.out.println(equalsClass.getValue("100", "100"));
-        System.out.println(equalsClass.getValue("Cat", "Dog") + "\n");
+        equalsClass.getValue("100", "100");
+        equalsClass.getValue("Cat", "Dog");
+        System.out.println(equalsClass.equals(equalsClass)+"\n");
 
         System.out.println("Task 10...");
 
