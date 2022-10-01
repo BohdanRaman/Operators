@@ -1,7 +1,11 @@
-import static java.sql.DriverManager.println;
-
+/**
+ * @author Raman Bohdan
+ * @version 1.0
+ * @since 26.09.2022
+ */
 public class Main {
     public static void main(String[] args) {
+        /* Task 5 and task 6 */
         Dog doberman = new Dog("Spot", "Ruff!");
         Dog colly = new Dog("Scruffy", "Wurf!");
         Dog taxa = new Dog("Spot", "Rrrrr");
@@ -19,49 +23,53 @@ public class Main {
         System.out.println(doberman.equals(taxa));
         System.out.println(colly.equals(taxa) + "\n");
 
+        /* Task 8 */
         System.out.println("Task 8");
-        int i = 0x9F;
-        int b = 0x7;
+        HexAndOctalNotations notations = new HexAndOctalNotations(0xABC, 026);
 
-        System.out.println("int i: " + Long.toBinaryString(i));
-        System.out.println("int b: " + Long.toBinaryString(b) + "\n");
+        System.out.println("int i hex: " + Long.toBinaryString(notations.a));
+        System.out.println("int b octal: " + Long.toBinaryString(notations.b) + "\n");
 
+        /* Task 10.
+         *I don't create hexadecimal constants in this task, that a hexadecimal number starts with zero*/
+        System.out.println("Task 10");
+        BitwiseOperatorsClass bitwiseOperators = new BitwiseOperatorsClass();
+
+        System.out.println("n = " + Integer.toBinaryString(bitwiseOperators.n));
+        System.out.println("k = " + Integer.toBinaryString(bitwiseOperators.k));
+        System.out.println("a = " + Integer.toBinaryString(bitwiseOperators.a));
+        System.out.println("v = " + Integer.toBinaryString(bitwiseOperators.v));
+        System.out.println("m = " + Integer.toBinaryString(bitwiseOperators.m));
+        System.out.println("e = " + Integer.toBinaryString(bitwiseOperators.e));
+        System.out.println("f = " + Integer.toBinaryString(bitwiseOperators.f));
+        System.out.println("g = " + Integer.toBinaryString(bitwiseOperators.g));
+        System.out.println("l = " + Integer.toBinaryString(bitwiseOperators.l));
+        System.out.println("h = " + Integer.toBinaryString(bitwiseOperators.h));
+
+        /*"Task 12"*/
         System.out.println("Task 12");
-        int c = 11;
-        System.out.println(Integer.toBinaryString(c));
-        c = c << 1;
-        System.out.println(Integer.toBinaryString(c));
-        c = c >>> 3;
-        System.out.println(Integer.toBinaryString(c) + "\n");
+        ShiftOperatorsClass shiftOperators = new ShiftOperatorsClass();
 
+        System.out.println(Integer.toBinaryString(shiftOperators.a));
+        System.out.println(Integer.toBinaryString(shiftOperators.lvalue));
+        System.out.println(Integer.toBinaryString(shiftOperators.rvalue));
+        System.out.println(Integer.toBinaryString(shiftOperators.rvalue1));
+        System.out.println(Integer.toBinaryString(shiftOperators.rvalue2));
+        System.out.println(Integer.toBinaryString(shiftOperators.rvalue3));
+        System.out.println(Integer.toBinaryString(shiftOperators.rvalue4));
+        System.out.println(Integer.toBinaryString(shiftOperators.rvalue5) + "\n");
+
+        /*Task 14*/
         System.out.println("Task 14");
         EqualsClass equalsClass = new EqualsClass();
-        equalsClass.getValue("100", "100");
-        equalsClass.getValue("Cat", "Dog");
-        System.out.println(equalsClass.equals(equalsClass) + "\n");
+        equalsClass.equalsString("Cat", "Dog");
 
-        /* I don't create hexadecimal constants in this task, that a hexadecimal number starts with zero*/
-        System.out.println("Task 10");
-        int n = 010101010101;
-        int k = 1010101010;
-        int a = n & k;
-        int v = n | k;
-        int m = n ^ k;
-        int e = ~n;
-        int f = ~k;
-        int g = n>>2;
-        int l = k<<4;
-        int h = k>>>3;
+        EqualsClass eq = new EqualsClass();
+        eq.equalsString("Cat", "Dog");
 
-        System.out.println("n = " + Integer.toBinaryString(n));
-        System.out.println("k = " + Integer.toBinaryString(k));
-        System.out.println("a = " + Integer.toBinaryString(a));
-        System.out.println("v = " + Integer.toBinaryString(v));
-        System.out.println("m = " + Integer.toBinaryString(m));
-        System.out.println("e = " + Integer.toBinaryString(e));
-        System.out.println("f = " + Integer.toBinaryString(f));
-        System.out.println("g = " + Integer.toBinaryString(g));
-        System.out.println("l = " + Integer.toBinaryString(l));
-        System.out.println("h = " + Integer.toBinaryString(h));
+        System.out.println(equalsClass==eq);
+        System.out.println(equalsClass!=eq);
+        System.out.println(equalsClass.equals(eq) + "\n");
+
     }
 }

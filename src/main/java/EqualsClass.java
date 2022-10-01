@@ -1,15 +1,13 @@
+/**
+ * Write a method that takes two String arguments and uses all the
+ * boolean comparisons to compare the two Strings and print the results. For the == and !=,
+ * also perform the equals( ) test. In main( ), call your method with some different String
+ * objects.
+ */
+
 public class EqualsClass {
-    public void getValue(String value1, String value2) {
-        if (value1.equals(value2)) {
-            System.out.println("Statement  is true");
-        } else {
-            System.out.println("Statement is false");
-        }
-        if (value1 == value2) {
-            System.out.println("Statement  is true");
-        } else {
-            System.out.println("Statement is false");
-        }
+    public Object equalsString(String value1, String value2) {
+        return null;
     }
 }
 
