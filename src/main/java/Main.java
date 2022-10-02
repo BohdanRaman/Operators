@@ -61,15 +61,15 @@ public class Main {
 
         /*Task 14*/
         System.out.println("Task 14");
-        EqualsClass equalsClass = new EqualsClass();
-        equalsClass.equalsString("Cat", "Dog");
+        EqualsStringClass eq = new EqualsStringClass();
+        eq.equalsTwoString("Cat", "Dog");
 
-        EqualsClass eq = new EqualsClass();
-        eq.equalsString("Cat", "Dog");
+        EqualsStringClass eq1 = new EqualsStringClass();
+        eq1.equalsTwoString("Cat", "Dog");
 
-        System.out.println(equalsClass==eq);
-        System.out.println(equalsClass!=eq);
-        System.out.println(equalsClass.equals(eq) + "\n");
+        System.out.println(eq==eq1);
+        System.out.println(eq!=eq1);
+        System.out.println(eq.equals(eq1));
 
     }
 }

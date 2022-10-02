@@ -5,9 +5,12 @@
  * objects.
  */
 
-public class EqualsClass {
-    public Object equalsString(String value1, String value2) {
-        return null;
+public class EqualsStringClass {
+    public void equalsTwoString(String str1, String str2) {
+
+        if (str1 == null || str2 == null) {
+            System.out.println("Is false");
+        }
     }
 }
 
