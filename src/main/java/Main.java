@@ -44,7 +44,7 @@ public class Main {
         System.out.println("f = " + Integer.toBinaryString(bitwiseOperators.f));
         System.out.println("g = " + Integer.toBinaryString(bitwiseOperators.g));
         System.out.println("l = " + Integer.toBinaryString(bitwiseOperators.l));
-        System.out.println("h = " + Integer.toBinaryString(bitwiseOperators.h));
+        System.out.println("h = " + Integer.toBinaryString(bitwiseOperators.h) + "\n");
 
         /*"Task 12"*/
         System.out.println("Task 12");
