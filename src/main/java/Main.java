@@ -32,14 +32,14 @@ public class Main {
 
         System.out.println("Task 10");
         BitwiseOperatorsClass bitwiseOperators = new BitwiseOperatorsClass();
-        System.out.println("bitwise operators AND = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsAnd(0x9ABC, 0x9FFF)));
-        System.out.println("bitwise operators OR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsOr(0x9ABC,0x9FFF)));
-        System.out.println("bitwise operators XOR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsExclusive(0x9ABC,0x9FFF)));
-        System.out.println("bitwise operators NOT = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsNot(0x9ABC)));
-        System.out.println("bitwise operators not = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsNotOther(0x9FFF)));
-        System.out.println("bitwise operators left-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsLeftShift(0x9FFF)));
-        System.out.println("bitwise operators right-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsRightShift(0x9ABC)));
-        System.out.println("bitwise operators unsigned left-shift= " + Integer.toBinaryString(bitwiseOperators.resultOperatorsUnsignedLeftShift(0x9FFF)));
+        System.out.println("bitwise operators AND = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsAnd(0b010101, 0b101010)));
+        System.out.println("bitwise operators OR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsOr(0b010101,0b101010)));
+        System.out.println("bitwise operators XOR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsExclusive(0b010101,0b101010)));
+        System.out.println("bitwise operators NOT = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsNot(0b010101)));
+        System.out.println("bitwise operators not = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsNotOther(0b101010)));
+        System.out.println("bitwise operators left-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsLeftShift(0b101010)));
+        System.out.println("bitwise operators right-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsRightShift(0b010101)));
+        System.out.println("bitwise operators unsigned left-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsUnsignedLeftShift(0b101010)) + "\n");
 
         /*"Task 12"*/
         System.out.println("Task 12");
