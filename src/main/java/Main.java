@@ -30,21 +30,16 @@ public class Main {
         System.out.println("int i hex: " + Long.toBinaryString(notations.a));
         System.out.println("int b octal: " + Long.toBinaryString(notations.b) + "\n");
 
-        /* Task 10.
-         *I don't create hexadecimal constants in this task, that a hexadecimal number starts with zero*/
         System.out.println("Task 10");
         BitwiseOperatorsClass bitwiseOperators = new BitwiseOperatorsClass();
-
-        System.out.println("n = " + Integer.toBinaryString(bitwiseOperators.n));
-        System.out.println("k = " + Integer.toBinaryString(bitwiseOperators.k));
-        System.out.println("a = " + Integer.toBinaryString(bitwiseOperators.a));
-        System.out.println("v = " + Integer.toBinaryString(bitwiseOperators.v));
-        System.out.println("m = " + Integer.toBinaryString(bitwiseOperators.m));
-        System.out.println("e = " + Integer.toBinaryString(bitwiseOperators.e));
-        System.out.println("f = " + Integer.toBinaryString(bitwiseOperators.f));
-        System.out.println("g = " + Integer.toBinaryString(bitwiseOperators.g));
-        System.out.println("l = " + Integer.toBinaryString(bitwiseOperators.l));
-        System.out.println("h = " + Integer.toBinaryString(bitwiseOperators.h) + "\n");
+        System.out.println("bitwise operators AND = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsAnd(0x9ABC, 0x9FFF)));
+        System.out.println("bitwise operators OR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsOr(0x9ABC,0x9FFF)));
+        System.out.println("bitwise operators XOR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsExclusive(0x9ABC,0x9FFF)));
+        System.out.println("bitwise operators NOT = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsNot(0x9ABC)));
+        System.out.println("bitwise operators not = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsNotOther(0x9FFF)));
+        System.out.println("bitwise operators left-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsLeftShift(0x9FFF)));
+        System.out.println("bitwise operators right-shift = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsRightShift(0x9ABC)));
+        System.out.println("bitwise operators unsigned left-shift= " + Integer.toBinaryString(bitwiseOperators.resultOperatorsUnsignedLeftShift(0x9FFF)));
 
         /*"Task 12"*/
         System.out.println("Task 12");
@@ -67,8 +62,8 @@ public class Main {
         EqualsStringClass eq1 = new EqualsStringClass();
         eq1.equalsTwoString("Cat", "Dog");
 
-        System.out.println(eq==eq1);
-        System.out.println(eq!=eq1);
+        System.out.println(eq == eq1);
+        System.out.println(eq != eq1);
         System.out.println(eq.equals(eq1));
 
     }

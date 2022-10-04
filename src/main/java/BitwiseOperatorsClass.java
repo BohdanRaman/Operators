@@ -8,14 +8,35 @@
 
 public class BitwiseOperatorsClass {
 
-    int n = 0x9ABC;
-    int k = 0x9FFF;
-    int a = n & k;
-    int v = n | k;
-    int m = n ^ k;
-    int e = ~n;
-    int f = ~k;
-    int g = n >> 2;
-    int l = k << 4;
-    int h = k >>> 3;
+    public int resultOperatorsAnd(int n, int k) {
+        return n & k;
+    }
+
+    public int resultOperatorsOr(int n, int k) {
+        return n | k;
+    }
+
+    public int resultOperatorsExclusive(int n, int k) {
+        return n ^ k;
+    }
+
+    public int resultOperatorsNot(int n) {
+        return ~n;
+    }
+
+    public int resultOperatorsNotOther(int k) {
+        return ~k;
+    }
+
+    public int resultOperatorsRightShift(int n) {
+        return n >> 2;
+    }
+
+    public int resultOperatorsLeftShift(int k) {
+        return k << 4;
+    }
+
+    public int resultOperatorsUnsignedLeftShift(int k) {
+        return k >>> 3;
+    }
 }
