@@ -9,7 +9,7 @@ public class EqualsStringClass {
     public void equalsTwoString(String str1, String str2) {
 
         if (str1 != str2) {
-            System.out.println("Is false");
+            System.out.println("Is true");
         }
     }
 }
