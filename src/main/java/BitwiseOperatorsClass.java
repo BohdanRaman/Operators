@@ -8,8 +8,8 @@
 
 public class BitwiseOperatorsClass {
 
-    int n = 010101010101;
-    int k = 1010101010;
+    int n = 0x9ABC;
+    int k = 0x9FFF;
     int a = n & k;
     int v = n | k;
     int m = n ^ k;
