@@ -8,7 +8,9 @@
 public class EqualsStringClass {
     public void equalsTwoString(String str1, String str2) {
 
-        if (str1 != str2) {
+        /* 1. The special method equals( ) that exists for all objects.
+           2.  == and != for primitives. */
+        if (!str1.equals(str2)) {
             System.out.println("Is true");
         }
     }
