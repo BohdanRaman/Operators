@@ -5,7 +5,7 @@
  * objects.
  */
 
-public class EqualsStringClass {
+public class EqualsStringClassExercise14 {
     public void equalsTwoString(String str1, String str2) {
 
         /* 1. The special method equals( ) that exists for all objects.

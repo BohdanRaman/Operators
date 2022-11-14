@@ -6,7 +6,26 @@
  * operators, and display the results using Integer.toBinaryString( ).
  */
 
-public class BitwiseOperatorsClass {
+public class BitwiseOperatorsClassExercise10 {
+
+    private  int n = 0b010101;
+    private  int k = 0b101010;
+
+    public int getN() {
+        return n;
+    }
+
+    public void setN(int n) {
+        this.n = n;
+    }
+
+    public int getK() {
+        return k;
+    }
+
+    public void setK(int k) {
+        this.k = k;
+    }
 
     public int resultOperatorsAnd(int n, int k) {
         return n & k;

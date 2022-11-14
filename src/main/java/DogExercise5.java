@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Dog {
+public class DogExercise5 {
     private String name;
     private String says;
 

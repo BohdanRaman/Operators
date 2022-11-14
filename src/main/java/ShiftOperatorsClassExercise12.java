@@ -4,8 +4,17 @@
  * displaying the result using Integer.toBinaryString( ).
  */
 
-public class ShiftOperatorsClass {
-    int a = 0b1111;
+public class ShiftOperatorsClassExercise12 {
+    private int a = 0b1111;
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
     int lvalue = a << 2;
     int rvalue = lvalue >>> 1;
     int rvalue1 = rvalue >>> 1;
