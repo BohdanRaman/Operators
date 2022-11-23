@@ -10,8 +10,10 @@ public class EqualsStringClassExercise14 {
 
         /* 1. The special method equals( ) that exists for all objects.
            2.  == and != for primitives. */
-        if (!str1.equals(str2)) {
+        if (str1.equals(str2)) {
             System.out.println("Is true");
+
+            /** If I put null in argument, then compiler swears */
         }
     }
 }
