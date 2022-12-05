@@ -6,15 +6,24 @@
  */
 
 public class EqualsStringClassExercise14 {
-    public void equalsTwoString(String str1, String str2) {
+    public boolean equalsTwoString(String str1, String str2) {
 
         /* 1. The special method equals( ) that exists for all objects.
            2.  == and != for primitives. */
-        if (str1 != null && str1.equals(str2)) {
-            System.out.println("Is true");
-
-            /** If I put null in argument, then compiler swears */
+        if (str1 == null && str2 == null) {
+            return true;
         }
+        if (str1 != null && str1.equals(str2)) {
+            return true;
+        }
+        if (str1 == str2) {
+            return true;
+        }
+        if (str1 != str2) {
+            return false;
+        }
+        return true;
     }
 }
+/* If I put null in argument, then compiler swears */
 
