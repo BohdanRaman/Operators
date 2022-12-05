@@ -58,13 +58,8 @@ public class Main {
         /*Task 14*/
         System.out.println("Task 14");
         EqualsStringClassExercise14 eq = new EqualsStringClassExercise14();
-        eq.equalsTwoString("Cat", "Dog");
+        System.out.println(eq.equalsTwoString("Cat", "Cat"));
+        System.out.println(eq.equalsTwoString("CAT", "DOG"));
 
-        EqualsStringClassExercise14 eq1 = new EqualsStringClassExercise14();
-        eq1.equalsTwoString("Cat", "Dog");
-
-        System.out.println(eq == eq1);
-        System.out.println(eq != eq1);
-        System.out.println(eq.equals(eq1));
     }
 }
