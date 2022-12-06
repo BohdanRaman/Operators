@@ -1,3 +1,11 @@
+package main;
+
+import task_10.BitwiseOperatorsClass;
+import task_12.ShiftOperatorsClass;
+import task_14.EqualsStringClass;
+import task_5.Dog;
+import task_8.HexAndOctalNotations;
+
 /**
  * @author Raman Bohdan
  * @version 1.0
@@ -6,9 +14,9 @@
 public class Main {
     public static void main(String[] args) {
         /* Task 5 and task 6 */
-        DogExercise5 doberman = new DogExercise5("Spot", "Ruff!");
-        DogExercise5 colly = new DogExercise5("Scruffy", "Wurf!");
-        DogExercise5 taxa = new DogExercise5("Spot", "Rrrrr");
+        Dog doberman = new Dog("Spot", "Ruff!");
+        Dog colly = new Dog("Scruffy", "Wurf!");
+        Dog taxa = new Dog("Spot", "Rrrrr");
 
         System.out.println("Task 5 and task 6");
         System.out.println("Name doberman: " + doberman.getName() + ", " + "doberman says: " + doberman.getSays());
@@ -25,14 +33,13 @@ public class Main {
 
         /* Task 8 */
         System.out.println("Task 8");
-        HexAndOctalNotationsExercise8 notations = new HexAndOctalNotationsExercise8(0xABC, 026);
-
-        System.out.println("int i hex: " + Long.toBinaryString(notations.getA()));
-        System.out.println("int b octal: " + Long.toBinaryString(notations.getB()) + "\n");
+        HexAndOctalNotations notations = new HexAndOctalNotations(0xABC, 026);
+        System.out.println("int i hex: " + Long.toBinaryString(notations.getHex()));
+        System.out.println("int b octal: " + Long.toBinaryString(notations.getOctal()) + "\n");
 
         /*Task 10*/
         System.out.println("Task 10");
-        BitwiseOperatorsClassExercise10 bitwiseOperators = new BitwiseOperatorsClassExercise10();
+        BitwiseOperatorsClass bitwiseOperators = new BitwiseOperatorsClass();
         System.out.println("bitwise operators AND = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsAnd(bitwiseOperators.getN(), bitwiseOperators.getK())));
         System.out.println("bitwise operators OR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsOr(bitwiseOperators.getN(), bitwiseOperators.getK())));
         System.out.println("bitwise operators XOR = " + Integer.toBinaryString(bitwiseOperators.resultOperatorsExclusive(bitwiseOperators.getN(), bitwiseOperators.getK())));
@@ -44,8 +51,7 @@ public class Main {
 
         /*Task 12*/
         System.out.println("Task 12");
-        ShiftOperatorsClassExercise12 shiftOperators = new ShiftOperatorsClassExercise12();
-
+        ShiftOperatorsClass shiftOperators = new ShiftOperatorsClass();
         System.out.println(Integer.toBinaryString(shiftOperators.getA()));
         System.out.println(Integer.toBinaryString(shiftOperators.lvalue));
         System.out.println(Integer.toBinaryString(shiftOperators.rvalue));
@@ -57,7 +63,7 @@ public class Main {
 
         /*Task 14*/
         System.out.println("Task 14");
-        EqualsStringClassExercise14 eq = new EqualsStringClassExercise14();
+        EqualsStringClass eq = new EqualsStringClass();
         System.out.println(eq.equalsTwoString("Cat", "Cat"));
         System.out.println(eq.equalsTwoString("CAT", "DOG"));
 

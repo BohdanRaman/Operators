@@ -1,3 +1,5 @@
+package task_10;
+
 /**
  * Write a program with two constant values, one with alternating binary
  * ones and zeroes, with a zero in the least-significant digit, and the second, also alternating,
@@ -6,25 +8,17 @@
  * operators, and display the results using Integer.toBinaryString( ).
  */
 
-public class BitwiseOperatorsClassExercise10 {
+public class BitwiseOperatorsClass {
 
-    private  int n = 0b010101;
-    private  int k = 0b101010;
+    private final int N = 0b010101;
+    private final int K = 0b101010;
 
     public int getN() {
-        return n;
-    }
-
-    public void setN(int n) {
-        this.n = n;
+        return N;
     }
 
     public int getK() {
-        return k;
-    }
-
-    public void setK(int k) {
-        this.k = k;
+        return K;
     }
 
     public int resultOperatorsAnd(int n, int k) {

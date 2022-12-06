@@ -1,3 +1,5 @@
+package task_14;
+
 /**
  * Write a method that takes two String arguments and uses all the
  * boolean comparisons to compare the two Strings and print the results. For the == and !=,
@@ -5,7 +7,7 @@
  * objects.
  */
 
-public class EqualsStringClassExercise14 {
+public class EqualsStringClass {
     public boolean equalsTwoString(String str1, String str2) {
 
         /* 1. The special method equals( ) that exists for all objects.
